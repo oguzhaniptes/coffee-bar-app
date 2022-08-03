@@ -1,8 +1,8 @@
 import { Box, Link, Text, IconButton, VStack, HStack } from '@chakra-ui/react'
 import { ChevronLeftIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import React from 'react'
-import '../index.css'
 import Form from '../component/Form'
+import '../index.css'
 
 export default function SignupPage() {
     return (

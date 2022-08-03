@@ -17,17 +17,28 @@ import {
     HStack,
     StackDivider,
     VStack,
-    Badge
+    Badge,
+    Tab,
+    Tabs,
+    TabPanel,
+    TabList,
+    TabPanels,
+    Flex,
+    Heading,
+    Tag
 } from '@chakra-ui/react'
+import Announcement from "../component/Announcement"
+import Cards from "../component/Cards"
 import '../index.css'
+
 
 export default function HomePage() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
 
     return (
-        <Box  bgImage="background-2.svg" bgPosition={'center'} bgRepeat={'no-repeat'} bgSize={'cover'} w={'100vw'} h={'55vh'}>
-            <Box>
+        <Box position={'absolute'} w={'100vw'} h={'200vh'} overflow={'hidden'}>
+            <Box bgImage="background-2.svg" bgPosition={'center'} bgRepeat={'no-repeat'} bgSize={'cover'}>
                 <IconButton mt={'4'} ml={'4'} ref={btnRef} onClick={onOpen} variant={'unstyled'} icon={<HamburgerIcon color={'white'} boxSize={6} ></HamburgerIcon>} _hover={{ background: "#515764" }}></IconButton>
                 <Drawer isOpen={isOpen} placement='left' onClose={onClose} finalFocusRef={btnRef}>
                     <DrawerOverlay />
@@ -67,6 +78,33 @@ export default function HomePage() {
                         </VStack>
                     </DrawerContent>
                 </Drawer>
+                <Announcement></Announcement>
+         
+                <Text fontWeight={'bold'} fontSize={24} pl={'1.2em'} color={'teal.900'}>Best Coffee In Town</Text>
+                <Tabs pl={'1.2em'} pt={'2em'} variant='soft-rounded' colorScheme={'teal'}>
+                    <TabList>
+                        <Tab color={'white'}>Coffee</Tab>
+                        <Tab color={'white'}>Tea</Tab>
+                        <Tab color={'white'}>Cold Drink</Tab>
+                        <Tab color={'white'}>Dessert</Tab>
+                    </TabList>
+                    <TabPanels>
+                        <TabPanel>
+                            <HStack overflow={'auto'} > 
+                                <Cards />
+                            </HStack>
+                        </TabPanel>
+                        <TabPanel>
+                            <p>2!</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <p>3!</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <p>4!</p>
+                        </TabPanel>
+                    </TabPanels>
+                </Tabs>
             </Box>
         </Box>
     )

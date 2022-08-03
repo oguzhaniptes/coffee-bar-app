@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 .signupform input::placeholder {
@@ -14,4 +15,8 @@ body {
 .signinform input::placeholder {
   color: black;
   font-family: inherit;
+}
+.carousel{
+  display: flex;
+  padding: 1.5em;
 }

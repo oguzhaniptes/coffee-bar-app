@@ -9,6 +9,7 @@ import Announcement from './component/Announcement';
 import Cards from './component/Cards';
 import { ChakraProvider } from '@chakra-ui/react';
 import NavBar from './component/NavBar';
+import GiftPage from './GiftPage/GiftPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,11 +17,12 @@ root.render(
     <ChakraProvider>
       {/* <Welcomepage></Welcomepage> */}
       {/* <HomePage></HomePage> */}
-      <NavBar></NavBar>
+      {/* <NavBar></NavBar> */}
       {/* <SigninPage></SigninPage> */}
       {/* <SignupPage></SignupPage> */}
       {/* <Announcement></Announcement> */}
       {/* <Cards></Cards> */}
+      <GiftPage></GiftPage>
     </ChakraProvider>
   </React.StrictMode>
 );

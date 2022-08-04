@@ -44,16 +44,6 @@ function Tea() {
                 <Badge ml={4} color={'#8DC1D0'} textColor={'#5EA4B7'} fontSize={'0.8em'}>10$</Badge>
             </VStack>
             <VStack position={'absolute'} bottom={2} pl={4} spacing={0} alignItems={"flex-start"}>
-                {/* 
-                <HStack position={'relative'} justifyContent={'space-between'} w={'40'}>
-                    <HStack spacing={0.5}>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange.200'}></StarIcon>
-                    </HStack>
-                    <IconButton size={'sm'} icon={<ArrowUpIcon></ArrowUpIcon>}></IconButton>
-                </HStack> */}
             </VStack>
         </Box>
     )
@@ -72,16 +62,6 @@ function Drink() {
                 <Badge ml={4} color={'#8DC1D0'} textColor={'#5EA4B7'} fontSize={'0.8em'}>20$</Badge>
             </VStack>
             <VStack position={'absolute'} bottom={2} pl={4} spacing={0} alignItems={"flex-start"}>
-                {/* 
-                <HStack position={'relative'} justifyContent={'space-between'} w={'40'}>
-                    <HStack spacing={0.5}>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange.200'}></StarIcon>
-                    </HStack>
-                    <IconButton size={'sm'} icon={<ArrowUpIcon></ArrowUpIcon>}></IconButton>
-                </HStack> */}
             </VStack>
         </Box>
     )
@@ -99,16 +79,6 @@ function Dessert() {
                 <Badge ml={4} color={'#8DC1D0'} textColor={'#5EA4B7'} fontSize={'0.8em'}>25$</Badge>
             </VStack>
             <VStack position={'absolute'} bottom={2} pl={4} spacing={0} alignItems={"flex-start"}>
-                {/* 
-                <HStack position={'relative'} justifyContent={'space-between'} w={'40'}>
-                    <HStack spacing={0.5}>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange'}></StarIcon>
-                        <StarIcon color={'orange.200'}></StarIcon>
-                    </HStack>
-                    <IconButton size={'sm'} icon={<ArrowUpIcon></ArrowUpIcon>}></IconButton>
-                </HStack> */}
             </VStack>
         </Box>
     )

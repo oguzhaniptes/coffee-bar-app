@@ -28,8 +28,10 @@ import {
     Tag
 } from '@chakra-ui/react'
 import Announcement from "../component/Announcement"
-import Cards from "../component/Cards"
+import { DessertCards, DrinkCards, TeaCards } from "../component/Cards"
 import '../index.css'
+import Popular from "../component/Popular"
+import { CoffeeCards } from "../component/Cards"
 
 
 export default function HomePage() {
@@ -37,7 +39,8 @@ export default function HomePage() {
     const btnRef = React.useRef()
 
     return (
-        <Box position={'absolute'} w={'100vw'} h={'200vh'} overflow={'hidden'}>
+        <Box h={'200vh'} overflow={'hidden'}>
+            
             <Box bgImage="background-2.svg" bgPosition={'center'} bgRepeat={'no-repeat'} bgSize={'cover'}>
                 <IconButton mt={'4'} ml={'4'} ref={btnRef} onClick={onOpen} variant={'unstyled'} icon={<HamburgerIcon color={'white'} boxSize={6} ></HamburgerIcon>} _hover={{ background: "#515764" }}></IconButton>
                 <Drawer isOpen={isOpen} placement='left' onClose={onClose} finalFocusRef={btnRef}>
@@ -79,8 +82,8 @@ export default function HomePage() {
                     </DrawerContent>
                 </Drawer>
                 <Announcement></Announcement>
-         
                 <Text fontWeight={'bold'} fontSize={24} pl={'1.2em'} color={'teal.900'}>Best Coffee In Town</Text>
+
                 <Tabs pl={'1.2em'} pt={'2em'} variant='soft-rounded' colorScheme={'teal'}>
                     <TabList>
                         <Tab color={'white'}>Coffee</Tab>
@@ -90,21 +93,31 @@ export default function HomePage() {
                     </TabList>
                     <TabPanels>
                         <TabPanel>
-                            <HStack overflow={'auto'} > 
-                                <Cards />
+                            <HStack overflow={'auto'} w={'90vw'}>
+                                <CoffeeCards></CoffeeCards>
                             </HStack>
                         </TabPanel>
                         <TabPanel>
-                            <p>2!</p>
+                            <HStack overflow={'auto'} w={'90vw'}>
+                                <TeaCards></TeaCards>
+                            </HStack>
                         </TabPanel>
                         <TabPanel>
-                            <p>3!</p>
+                            <HStack overflow={'auto'} w={'90vw'}>
+                                <DrinkCards></DrinkCards>
+                            </HStack>
                         </TabPanel>
                         <TabPanel>
-                            <p>4!</p>
+                            <HStack overflow={'auto'} w={'90vw'}>
+                                <DessertCards></DessertCards>
+                            </HStack>
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
+            </Box>
+            <Box>
+                <Text fontWeight={'bold'} color={'teal.900'} fontSize={'2xl'} pl={'1.2em'} pt={'2em'}>Most popular</Text>
+                <Popular></Popular>
             </Box>
         </Box>
     )

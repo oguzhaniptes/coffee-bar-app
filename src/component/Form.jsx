@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { Flex, VStack, Text, Input, Button, ChakraProvider, InputRightElement, InputGroup, color } from '@chakra-ui/react';
+import { Flex, VStack, Text, Input, Button, InputRightElement, InputGroup } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 export default function Form() {

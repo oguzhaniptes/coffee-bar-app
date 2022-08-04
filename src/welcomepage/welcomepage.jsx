@@ -11,10 +11,10 @@ export default function Welcomepage() {
                     <p style={{fontSize:14}}>best coffee in the world</p>
                 </Box>
                 <Button bgColor={"#5EA4B7"} w={'25vw'}>
-                    <Link href='/SignIn' >Sign In</Link>
+                    <Link href='/signinPage' >Sign In</Link>
                 </Button>
                 <Button bgColor={"#5EA4B7"} w={'25vw'}>
-                    <Link href='/SignUp' >Sign Up</Link>
+                    <Link href='/signupPage' >Sign Up</Link>
                 </Button>
             </VStack>
         </Box>

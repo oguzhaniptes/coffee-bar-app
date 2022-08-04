@@ -7,7 +7,7 @@ import '../index.css'
 export default function SignupPage() {
     return (
             <Box >
-                <Box bgImage="/signUp-background.svg" w={"100vw"} h={"100vh"} backgroundColor={"#fefdf9"} bgPosition={"center"}>
+                <Box bgImage="/signUp-background.svg" w={"100vw"} h={"100vh"} backgroundColor={"#fefdf9"} bgPosition={"center"} bgRepeat={'no-repeat'}>
                     <Link href={"#"}>
                         <IconButton ml={6} mt={6} variant={'unstyled'} icon={<ChevronLeftIcon boxSize={8} color={'white'}></ChevronLeftIcon>}></IconButton>
                     </Link>

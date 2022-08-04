@@ -6,16 +6,15 @@ import '../index.css'
 
 export default function SigninPage() {
     return (
-        <Box>
-            <Box bgImage="signIn-background.svg" w={'100vw'} h={'50vh'} bgRepeat={'no-repeat'}>
+        <Box  bgImage="signIn-background.svg" w={'100vw'} h={'60vh'} bgRepeat={'no-repeat'}>
+            <Box>
                 <Link href='https://twitter.com'>
                     <IconButton ml={6} mt={6} variant={'unstyled'} icon={<ChevronLeftIcon boxSize={8} color={'white'}></ChevronLeftIcon>}></IconButton>
                 </Link>
                 <Box>
                     <Text mt={'100px'} ml={'50px'} color={'white'} fontSize={'4xl'} fontWeight={'bold'}>Welcome<br></br>Back</Text>
                 </Box>
-            </Box>
-            <VStack spacing={10}>
+            <VStack spacing={10} mt={'40'}>
                 <Form></Form>
                 <Box w={'80vw'}>
                     <HStack justifyContent={'space-between'}>
@@ -30,6 +29,7 @@ export default function SigninPage() {
                     <Text color={'black'} fontWeight={'bold'} as={'u'}>Forgot password</Text>
                 </HStack>
             </VStack>
+            </Box>
         </Box>
     )
 }

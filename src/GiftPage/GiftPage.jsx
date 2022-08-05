@@ -8,24 +8,18 @@ export default function GiftPage() {
         <Box>
             <NavBar></NavBar>
             <Box mt={6} >
-
                 <Stack divider={<StackDivider h={4} />} mx={8} >
                     <HStack justifyContent={'space-around'}>
                         <IconButton variant={'unstyled'} icon={<ChevronLeftIcon color={'#5EA4B7'} boxSize={10}></ChevronLeftIcon>} _hover={{ background: "#515764" }}></IconButton>
-                        <Text>Gift Page</Text>
+                        <Text fontWeight={'bold'}>Gift Page</Text>
                         <IconButton color={'#5EA4B7'} variant={'unstyled'} icon={<InfoIcon boxSize={6} ></InfoIcon>} ></IconButton>
                     </HStack>
                     <VStack>
                         <GiftCards></GiftCards>
                     </VStack>
-
                 </Stack>
-
             </Box>
-
         </Box>
-
-
     )
 }
 

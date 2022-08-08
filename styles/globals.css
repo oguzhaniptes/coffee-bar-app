@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signupform input::placeholder {
+  color: white;
+  font-family: inherit;
+
+}
+
+.signinform input::placeholder {
+  color: black;
+  font-family: inherit;
+}
+.carousel{
+  display: flex;
+  padding: 1.5em;
+}

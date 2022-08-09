@@ -9,10 +9,11 @@ export default function Form() {
     return (
         <Flex >
             <Formik
-                initialValues={{ name: '', email: '', password: '' }}
+                
+                initialValues={{  name: '', email: '', password: '' }}
                 onSubmit={(values) => { console.log(values); }}
                 validate={values => {
-                    const errors = {};
+                    const errors = {email: '', password: '', name : ''};
                     if (!values.email) {
                         errors.email = 'Required';
                     } else if (
@@ -46,10 +47,10 @@ export default function Form() {
                                 onBlur={handleBlur}
                                 value={values.name}
                                 variant='flushed'
-                                focusBorderColor='white'
-                                color={'white'}
+                                color={'black'}
+                                focusBorderColor='black'
                             />
-                            <Text color={'red'}>{errors.text && touched.text && errors.text}</Text>
+                            <Text color={'red'}>{errors.name && touched.name && errors.name}</Text>
                             <Input
                                 w={'80vw'}
 
@@ -60,8 +61,8 @@ export default function Form() {
                                 onBlur={handleBlur}
                                 value={values.email}
                                 variant='flushed'
-                                color={'white'}
-                                focusBorderColor='white'
+                                color={'black'}
+                                focusBorderColor='black'
                             />
                             <Text color={'red'}>{errors.email && touched.email && errors.email}</Text>
                             <InputGroup size='md'>
@@ -74,8 +75,8 @@ export default function Form() {
                                     onBlur={handleBlur}
                                     value={values.password}
                                     variant='flushed'
-                                    color={'white'}
-                                    focusBorderColor='white'
+                                    color={'black'}
+                                    focusBorderColor='black'
                                 />
                                 <InputRightElement width='2rem'>
                                     <Button variant='ghost' onClick={handleClick}>
@@ -88,6 +89,6 @@ export default function Form() {
                     </form>
                 )}
             </Formik>
-        </Flex>
+        </Flex >
     )
 }

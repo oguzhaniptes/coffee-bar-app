@@ -6,7 +6,7 @@ import SurveysPage from './SurveysPage/SurveysPage'
 
 const Home: NextPage = () => {
   return (
-    <SurveysPage></SurveysPage>
+    <Welcomepage></Welcomepage>
   )
 }
 

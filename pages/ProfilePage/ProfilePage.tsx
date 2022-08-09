@@ -1,9 +1,7 @@
 import React from 'react'
-import { Box, Stack, HStack, VStack, StackDivider, Text, IconButton, Image, Badge } from '@chakra-ui/react'
-import { ChevronLeftIcon, InfoIcon, SettingsIcon } from '@chakra-ui/icons'
+import { Box, HStack, VStack, Text, IconButton, Image } from '@chakra-ui/react'
+import { ChevronLeftIcon,  SettingsIcon } from '@chakra-ui/icons'
 import NavBar from '../Components/NavBar'
-import { GiftCards } from '../GiftPage/GiftPage'
-import HomePage from '../HomePage/HomePage'
 import Link from 'next/link'
 
 export default function ProfilePage() {
@@ -63,7 +61,7 @@ function HistoryBoxBuilder({ imgUrl, foodName, date, price }: { imgUrl: string, 
             <Box mx={'4vw'}  display={'flex'} justifyContent={'space-between'} alignItems={'center'} h={'10vh'}>
                 <Image w={'6vh'} src={imgUrl}></Image>
                 <VStack >
-                    <Text shadow color={'white'} fontWeight={'bold'}>{foodName}</Text>
+                    <Text color={'white'} fontWeight={'bold'}>{foodName}</Text>
                     <Text color={'white'}>{date}</Text>
                 </VStack>
                 <Text boxShadow={'md'} textAlign={'center'} bgColor={'white'} borderRadius={12} w={12}>{price}</Text>
